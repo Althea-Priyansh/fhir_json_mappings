@@ -1,0 +1,75 @@
+{
+    "resourceType" : "Organization",
+    "id" : "org121",
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      Surya Diagnostic Center\n      <br/>\n\t\t\t\t3300 Washtenaw Avenue, Suite 227\n      <br/>\n\t\t\t\tAnn Arbor, MI 48104\n      <br/>\n\t\t\t\tUSA\n      <br/>\n\t\t\t\t(+1) 734-677-7777 (phone)\n      <br/>\n\t\t\t\t(+1) 734-677-6622 (fax)\n      <br/>\n\t\t\t\tE-mail:  \n      <a href=\"mailto:hq@HL7.org\">hq@HL7.org</a>\n    \n    </div>"
+    },
+    "name" : "Surya Diagnostic Center",
+    "alias" : ["Surya Diagnosis"],
+    "contact" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/extended-contact-availability",
+        "valueAvailability" : {
+          "availableTime" : [
+            {
+            "daysOfWeek" : ["mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri",
+            "sat"],
+            "availableStartTime" : "08:30:00",
+            "_availableStartTime" : {
+              "extension" : [{
+                "url" : "http://hl7.org/fhir/StructureDefinition/timezone",
+                "valueCode" : "India/Maharashtra"
+              }]
+            },
+            "availableEndTime" : "20:30:00",
+            "_availableEndTime" : {
+              "extension" : [{
+                "url" : "http://hl7.org/fhir/StructureDefinition/timezone",
+                "valueCode" : "India/Maharashtra"
+              }]
+            }
+          },
+          {
+            "daysOfWeek" : ["sun"],
+            "availableStartTime" : "08:30:00",
+            "_availableStartTime" : {
+              "extension" : [{
+                "url" : "http://hl7.org/fhir/StructureDefinition/timezone",
+                "valueCode" : "India/Maharashtra"
+              }]
+            },
+            "availableEndTime" : "12:30:00",
+            "_availableEndTime" : {
+              "extension" : [{
+                "url" : "http://hl7.org/fhir/StructureDefinition/timezone",
+                "valueCode" : "India/Maharashtra"
+              }]
+            }
+          }
+        ]
+        }
+      }],
+      "telecom" : [
+    {
+        "system" : "phone",
+        "value" : "8104055513"
+    },
+      {
+        "system" : "email",
+        "value" : "appointment.surya@gmail.com"
+      }
+    ],
+      "address" : {
+        "line" : ["Meenatai Thakrey, Sector 3, Airoli"],
+        "city" : "Mumbai",
+        "state" : "Maharashtra",
+        "postalCode" : "400708",
+        "country" : "India"
+      }
+    }]
+  }
