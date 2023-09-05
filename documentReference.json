@@ -1,0 +1,33 @@
+{
+    "resourceType": "DocumentReference",
+    "id": "doc007",
+    "status": "current",
+    "type": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "58410-2",
+          "display": "Complete blood count (CBC) panel - Blood"
+        }
+      ],
+      "text": "Complete Blood Count (CBC) Report"
+    },
+    "subject": {
+      "reference": "Patient/example-patient",
+      "display":"ShyamamGupta"
+    },
+    "content": [
+      {
+        "attachment": {
+          "contentType": "application/pdf",
+          "url": "http://example.com/documents/cbc-report.pdf",
+          "title": "CBC Report"
+        }
+      }
+    ],
+    "authenticator": {
+      "reference": "Practitioner/002"
+    },
+    "indexed": "2023-09-05T08:00:00Z"
+  }
+  
