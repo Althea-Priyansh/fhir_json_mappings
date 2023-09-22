@@ -1,0 +1,20 @@
+{
+    "resourceType": "Observation",
+    "id": "history-of-illness",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "52473-4",
+          "display": "Patient's History of Illness"
+        }
+      ],
+      "text": "Patient's History of Illness"
+    },
+    "subject": {
+      "reference": "Patient/example-patient"
+    },
+    "valueString": "Patient his history of ischemic stroke in 2016, now he recovered well following this. Patient is an unknown case of Hypertension, diabetes mellitus, and coronary artery disease"
+  }
+  

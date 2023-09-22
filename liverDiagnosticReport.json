@@ -33,10 +33,9 @@
           "coding" : [{
             "system" : "http://loinc.org",
             "code" : "58410-2",
-            "display" : "Complete Blood count"
-          }
-        ],
-          "text" : "Complete Blood Count"
+            "display" : "Liver Panel L 1; LFT SERUM"
+          }],
+          "text" : "Liver Panel L 1; LFT SERUM"
         },
         "subject" : {
           "reference" : "Patient/pat2"
@@ -853,12 +852,6 @@
           "reference" : "Organization/1832473e-2fe0-452d-abe9-3cdb9879522f",
           "display" : "Acme Laboratory, Inc"
         }],
-        "presentedForm": [
-          {
-            "contentType": "application/pdf",
-            "data": "Base64-encoded-PDF-data"
-          }
-        ],
         "valueQuantity" : {
           "value" : 0.92,
           "unit" : "x10*9/L",

@@ -7,6 +7,12 @@
     },
     "name" : "Surya Diagnostic Center",
     "alias" : ["Surya Diagnosis"],
+    "extension":[
+      {
+      "url":"http://hl7.org/fhir/StructureDefinition/",
+      "valueCode":""
+    }
+  ],
     "contact" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/extended-contact-availability",

@@ -1,0 +1,243 @@
+{
+    "resourceType": "Bundle",
+    "type": "document",
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "Composition",
+          "status": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "42349-1",
+                "display": "Discharge summary"
+              }
+            ],
+            "text": "Discharge Summary"
+          },
+          "subject": {
+            "reference": "Patient/P12345"
+          },
+          "date": "2023-09-18T14:30:00Z",
+          "author": [
+            {
+              "reference": "Practitioner/DrSmith"
+            }
+          ],
+          "title": "Discharge Summary for Patient John Doe",
+          "section": [
+            {
+              "title": "Chief Complaint",
+              "entry": [
+                {
+                  "reference": "Observation/ChiefComplaint"
+                }
+              ]
+            },
+            {
+              "title":"Bed No",
+              "text":"6969"
+            },
+            {
+              "title": "Diagnosis",
+              "entry": [
+                {
+                  "reference": "Condition/Diagnosis1",
+                  "display":"ConditionName"
+                },
+                {
+                  "reference": "Condition/Diagnosis2"
+                }
+              ]
+            },
+            {
+              "title": "Medications",
+              "entry": [
+                {
+                  "reference": "Medication/Medication1"
+                },
+                {
+                  "reference": "Medication/Medication2"
+                }
+              ]
+            },
+            {
+              "title": "Procedures",
+              "entry": [
+                {
+                  "reference": "Procedure/Procedure1"
+                }
+              ]
+            },
+            {
+              "title": "Discharge Instructions",
+              "entry": [
+                {
+                  "reference": "DocumentReference/DischargeInstructions"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Patient",
+          "id": "P12345",
+          "name": [
+            {
+              "family": "Doe",
+              "given": ["John"]
+            }
+          ],
+          "gender": "male",
+          "birthDate": "1980-01-15"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Observation",
+          "id": "ChiefComplaint",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "10154-3",
+                "display": "Chief Complaint"
+              }
+            ],
+            "text": "Chief Complaint"
+          },
+          "subject": {
+            "reference": "Patient/P12345"
+          },
+          "valueString": "Shortness of breath"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Condition",
+          "id": "Diagnosis1",
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10",
+                "code": "E11",
+                "display": "Type 2 Diabetes Mellitus"
+              }
+            ],
+            "text": "Type 2 Diabetes Mellitus"
+          },
+          "subject": {
+            "reference": "Patient/P12345"
+          }
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Condition",
+          "id": "Diagnosis2",
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10",
+                "code": "I10",
+                "display": "Essential (primary) hypertension"
+              }
+            ],
+            "text": "Essential (primary) hypertension"
+          },
+          "subject": {
+            "reference": "Patient/P12345"
+          }
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "Medication1",
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "208127",
+                "display": "Lisinopril 10mg Tablet"
+              }
+            ],
+            "text": "Lisinopril 10mg Tablet"
+          },
+          "subject": {
+            "reference": "Patient/P12345"
+          },
+          "dosageInstruction": [
+            {
+              "text": "Take 1 tablet daily"
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "Medication2",
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "54868",
+                "display": "Metformin 500mg Tablet"
+              }
+            ],
+            "text": "Metformin 500mg Tablet"
+          },
+          "subject": {
+            "reference": "Patient/P12345"
+          },
+          "dosageInstruction": [
+            {
+              "text": "Take 1 tablet twice daily"
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "Procedure1",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "1234567",
+                "display": "Appendectomy"
+              }
+            ],
+            "text": "Appendectomy"
+          },
+          "subject": {
+            "reference": "Patient/P12345"
+          },
+          "performedDateTime": "2023-09-15T10:00:00Z"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "DischargeInstructions",
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/plain",
+                "data": "Please follow up with your primary care physician within two weeks..."
+              }
+            }
+          ],
+          "subject": {
+            "reference": "Patient/P12345"
+          }
+        }
+      }
+    ]
+  }
+  

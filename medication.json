@@ -1,0 +1,71 @@
+{
+    "resourceType": "MedicationStatement",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns='https://www.w3.org/1999/xhtml'>aspirin 81mg once daily</div>"
+    },
+    "contained": [
+      {
+        "resourceType": "Medication",
+        "id": "med1",
+        "code": {
+          "coding": [
+            {
+              "code": "370167008",
+              "system": "https://snomed.info/sct",
+              "display": "aspirin 81mg e/c tablet "
+            }
+          ],
+          "text": "aspirin 81mg e/c tablet"
+        }
+      }
+    ],
+    "medicationReference": {
+      "reference": "#med1",
+      "display": "aspirin 81mg e/c tablet"
+    },
+    "status": "active",
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "code": "49436004",
+            "system": "https://snomed.info/sct",
+            "display": "atrial fibrillation (disorder)",
+            "path": "reasonCode"
+          }
+        ],
+        "text": "atrial fibrillation"
+      }
+    ],
+    "dosage": [
+      {
+        "text": "once daily",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        },
+        "doseAndRate": [
+          {
+            "doseQuantity": {
+              "value": 2,
+              "system": "https://snomed.info/sct",
+              "unit": "tablet",
+              "code": "428673006"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "50750",
+    "subject": {
+      "reference": "Patient/50732"
+    },
+    "meta": {
+      "lastUpdated": "2022-11-07T18:04:15Z",
+      "versionId": "1"
+    }
+  }
