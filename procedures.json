@@ -1,0 +1,65 @@
+{
+  "resourceType": "Procedure",
+  "id": "example",
+  "meta": {
+    "versionId": "1"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Routine Appendectomy</div>"
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "80146002",
+        "display": "Living donor liver transplant..."
+      }
+    ],
+    "text": "Living donor liver transplant..."
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "occurrenceDateTime": "2013-04-05",
+  "performer": [
+    {
+      "actor": {
+        "reference": "Practitioner/example",
+        "display": "Dr Abhideep Chaudhary"
+      }
+    }
+  ],
+  "reason": [
+    {
+      "concept": {
+        "text": "Course in hospital - Mr. Tarun Kumar Sapra was admitted for optimization of treatment for his underlying disease. He was worked up for Liver Transplant. After patient and donor workup as per protocol and approval from authorization committee and after obtaining informed consent of family and patient "
+      }
+    }
+  ],
+  "followUp": [
+    {
+      "text": "Post operative day 1 - ryles tube..."
+    },
+    {
+      "text": "Post operative day 2 - ryles tube..."
+    },
+    {
+      "text": "Post operative day 3 - ryles tube..."
+    },
+    {
+      "text": "Post operative day 4 - ryles tube..."
+    }
+  ],
+  "note": [
+    {
+      "text": "All operative findings"
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "ImagingStudy/example"
+    }
+  ]
+}

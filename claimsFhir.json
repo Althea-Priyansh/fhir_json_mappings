@@ -1,0 +1,114 @@
+{
+  "resourceType": "Claim",
+  "id": "example-claim",
+  "identifier": [
+    {
+      "system": "http://example.org/claim-ids",
+      "value": "123456789"
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "institutional"
+      }
+    ]
+  },
+  "use": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-use",
+        "code": "preauthorization"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/example-patient"
+  },
+  "created": "2023-09-25",
+  "insurer": {
+    "identifier": {
+      "system": "http://example.org/insurer-ids",
+      "value": "bajaj-allianz"
+    },
+    "display": "Bajaj Allianz"
+  },
+  "provider": {
+    "reference": "Practitioner/hospital-provider"
+  },
+  "diagnosis": [
+    {
+      "sequence": 1,
+      "diagnosisCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10",
+            "code": "M32.11"
+          }
+        ]
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://example.org/extension/mediclaim-status",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://example.org/extension/commencement-date",
+      "valueDate": "2020-01-01"
+    }
+  ],
+  "insurance": [
+    {
+      "sequence": 1,
+      "coverage": {
+        "reference": "Coverage/coverage1"
+      },
+      "focal": true,
+      "preAuthRef": "123ABC"
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://example.org/service-codes",
+            "code": "pre-hospitalization-expenses"
+          }
+        ]
+      },
+      "quantity": {
+        "value": 1,
+        "unit": "unit"
+      },
+      "net": {
+        "value": 5000.0,
+        "currency": "INR"
+      }
+    },
+    {
+      "sequence": 1,
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://example.org/service-codes",
+            "code": "12345"
+          }
+        ]
+      },
+      "quantity": {
+        "value": 1,
+        "unit": "unit"
+      },
+      "net": {
+        "value": 100.0,
+        "currency": "USD"
+      }
+    }
+  ]
+}

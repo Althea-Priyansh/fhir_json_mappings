@@ -1,0 +1,61 @@
+{
+  "resourceType": "Coverage",
+  "id": "coverage1",
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/insuranceplan-type",
+        "code": "group"
+      }
+    ]
+  },
+  "policyHolder": {
+    "reference": "Patient/example-patient"
+  },
+  "subscriber": {
+    "reference": "Patient/example-patient"
+  },
+  "beneficiary": {
+    "reference": "Patient/example-patient"
+  },
+  "period": {
+    "start": "2020-01-01",
+    "end": "2021-12-31"
+  },
+  "payor": [
+    {
+      "reference": "Organization/previous-insurer"
+    }
+  ],
+  "name": "Previous Insurance Company",
+  "class": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/coverage-class",
+            "code": "plan"
+          }
+        ]
+      },
+      "value": "Plan A"
+    }
+  ],
+  "benefit": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://example.org/benefit-types",
+            "code": "sum-insured"
+          }
+        ]
+      },
+      "valueMoney": {
+        "value": 50000.0,
+        "currency": "USD"
+      }
+    }
+  ]
+}
