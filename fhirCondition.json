@@ -1,0 +1,15 @@
+{
+  "resourceType": "Condition",
+  "category": [
+    {
+      "text": "Discharge Allergies"
+    }
+  ],
+  "code": {
+    "text": "NKDA"
+  },
+  "subject": {
+    "reference": "Patient/WHS1.0000335661"
+  },
+  "recordedDate": "2023-10-01T11:44:00"
+}

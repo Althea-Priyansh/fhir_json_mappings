@@ -55,11 +55,9 @@
   "note": [
     {
       "text": "All operative findings"
-    }
-  ],
-  "supportingInfo": [
+    },
     {
-      "reference": "ImagingStudy/example"
+      "text": "Second Operative finding"
     }
   ]
 }
